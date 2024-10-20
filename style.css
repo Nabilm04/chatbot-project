@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#chat-box {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+#chat-container {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+    border-radius: 20px;
+    font-size: 16px;
+    position: relative;
+    clear: both;
+}
+
+.user-message {
+    background-color: #c6eaf8;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+    margin-right: 10px;
+    max-width: 70%;
+}
+
+.bot-message {
+    background-color: #aff089;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+#input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logo-container {
+    position: absolute;
+    top: 30px;
+    right: 30px; 
+    display: flex;
+    align-items: center;
+}
+
+#logo-text {
+    margin-right: 10px; 
+    font-size: 32px; 
+}
+
+#logo {
+    max-width: 100px; 
+    height: auto;
+}
+
